@@ -1,0 +1,225 @@
+{
+    "almacenPeliculas": [
+        {
+            "id": 1,
+            "titulo": "Dead Ringers",
+            "año": 1988,
+            "coordenadas": {
+                "lat": 56.130366,
+                "lon": -106.346771
+            }, 
+            "premio": true,
+            "imagen": "../../images/Dead.jpg",
+            "idDirector": 1
+        },
+        {
+            "id": 2,
+            "titulo": "The Fly",
+            "año": 1986,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/TheFly.jpg",
+            "idDirector": 1
+        },
+        {
+            "id": 3,
+            "titulo": "VideoDrome",
+            "año": 1983,
+            "coordenadas": {
+                "lat": 56.130366,
+                "lon": -106.346771
+            }, 
+            "premio": true,
+            "imagen": "../../images/VideoDrome.jpg",
+            "idDirector": 1
+        },
+        
+        {
+            "id": 4,
+            "titulo": "Pearl",
+            "año": 2022,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/Pearl.jpg",
+            "idDirector": 2
+        },
+        {
+            "id": 5,
+            "titulo": "X",
+            "año": 2022,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/X.jpg",
+            "idDirector": 2
+        },
+        {
+            "id": 6,
+            "titulo": "MaXXXine",
+            "año": 2024,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": false,
+            "imagen": "../../images/Maxxine.jpg",
+            "idDirector": 2
+        },
+     
+        {
+            "id": 7,
+            "titulo": "Psicosis",
+            "año": 1960,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/Psicosis.jpg",
+            "idDirector": 3
+        },
+        {
+            "id": 8,
+            "titulo": "The Birds",
+            "año": 1963,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/TheBirds.jpg",
+            "idDirector": 3
+        },
+        {
+            "id": 9,
+            "titulo": "Frenzy",
+            "año": 1972,
+            "coordenadas": {
+                "lat": 55.378051,
+                "lon": -3.435973
+            }, 
+            "premio": true,
+            "imagen": "../../images/Frenzy.jpg",
+            "idDirector": 3
+        },
+        
+        {
+            "id": 10,
+            "titulo": "REC",
+            "año": 2007,
+            "coordenadas": {
+                "lat": 40.463667,
+                "lon": -3.74922
+            }, 
+            "premio": true,
+            "imagen": "../../images/REC.jpg",
+            "idDirector": 4
+        },
+        {
+            "id": 11,
+            "titulo": "Veronica",
+            "año": 2017,
+            "coordenadas": {
+                "lat": 40.463667,
+                "lon": -3.74922
+            }, 
+            "premio": true,
+            "imagen": "../../images/Veronica.jpg",
+            "idDirector": 4
+        },
+        {
+            "id": 12,
+            "titulo": "La abuela",
+            "año": 2021,
+            "coordenadas": {
+                "lat": 40.463667,
+                "lon": -3.74922
+            }, 
+            "premio": true,
+            "imagen": "../../images/LaAbuela.jpg",
+            "idDirector": 4
+        },
+       
+        {
+            "id": 13,
+            "titulo": "El laberinto del fauno",
+            "año": 2006,
+            "coordenadas": {
+                "lat": 40.463667,
+                "lon": -3.74922
+            }, 
+            "premio": true,
+            "imagen": "../../images/Fauno.jpg",
+            "idDirector": 5
+        },
+        {
+            "id": 14,
+            "titulo": "Cronos",
+            "año": 1993,
+            "coordenadas": {
+                "lat": 23.634501,
+                "lon": -102.552784
+            }, 
+            "premio": true,
+            "imagen": "../../images/Cronos.jpg",
+            "idDirector": 5
+        },
+        {
+            "id": 15,
+            "titulo": "El espinazo del diablo",
+            "año": 2001,
+            "coordenadas": {
+                "lat": 40.463667,
+                "lon": -3.74922
+            }, 
+            "premio": true,
+            "imagen": "../../images/EspinazoDiablo.jpg",
+            "idDirector": 5
+        },
+        
+        {
+            "id": 16,
+            "titulo": "Saw",
+            "año": 2004,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": true,
+            "imagen": "../../images/SAW.jpg",
+            "idDirector": 6
+        },
+        {
+            "id": 17,
+            "titulo": "The Conjuring",
+            "año": 2013,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            },
+            "premio": true,
+            "imagen": "../../images/Conjruing.jpg",
+            "idDirector": 6
+        },
+        {
+            "id": 18,
+            "titulo": "Malignant",
+            "año": 2021,
+            "coordenadas": {
+                "lat": 37.09024,
+                "lon": -95.712891
+            }, 
+            "premio": false,
+            "imagen": "../../images/Malignant.jpg",
+            "idDirector": 6
+        }
+    ]
+}
