@@ -9,9 +9,9 @@
     </div>
     <div class="row ">
         <div class="col-lg-4 col-md-4 col-sm-12 mt-2" *ngFor="let director of directores;">
-            <div class="director-container" style="display: flex;">
+            <div style="display: flex;">
                 <img [src]="director.imagen" [alt]="'Imagen de ' + director.nombre">
-                <div style="font-size: 16px; color: aliceblue; margin-left: 10px; margin-top: auto;">
+                <div class="info-director">
                     <strong>Nombre:</strong> {{ director.nombre }} <br>
                     <strong>Edad:</strong> {{ director.edad }} años
                 </div>
