@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -9,4 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 export class PresentacionComponent {
 
+  constructor(private titulo: Title) {
+    titulo.setTitle('NightmareBox')
+  }
 }
