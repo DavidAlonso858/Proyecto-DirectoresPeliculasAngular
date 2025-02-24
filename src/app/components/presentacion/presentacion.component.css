@@ -1,0 +1,45 @@
+body {
+    background: url('../../../../public/fondoTerror.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+.btn:hover {
+    box-shadow: 0 8px 15px rgba(255, 0, 200, 0.6);
+    /* Sombra más intensa */
+    transform: scale(1.5);
+}
+
+.head1 {
+    /* TITULO*/
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff0000, #820486, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        5px 5px 1px rgba(255, 0, 0, 0.9),
+        /* Sombra roja brillante */
+        2px 2px 20px rgba(0, 0, 0, 1);
+    /* Sombra negra profunda */
+}
+
+.head2 {
+    /* CABECERA*/
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7), 2px 2px 15px rgba(0, 0, 0, 0.8);
+    ;
+}
+
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
