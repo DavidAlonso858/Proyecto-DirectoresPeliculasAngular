@@ -9,7 +9,7 @@
     padding: 0px 0px 0px 0px;
     color: white;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden; /* esconderlo cunado uso la rueda */
 }
 
 .menu a {

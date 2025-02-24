@@ -13,7 +13,7 @@ body {
 
 .head1 {
     /* TITULO*/
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bold;
     background: linear-gradient(to right, #ff0000, #820486, #000000);
     -webkit-background-clip: text;
@@ -29,10 +29,10 @@ body {
 .head2 {
     /* CABECERA*/
     margin-top: 20px;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
-    color: #fff;
-    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7), 2px 2px 15px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgba(255, 0, 0, 0.7), 2px 2px 100px rgba(0, 0, 0, 0.8);
     ;
 }
 
