@@ -13,7 +13,7 @@ body {
 
 .head1 {
     /* TITULO*/
-    font-size: 90px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(to right, #ff0000, #820486, #000000);
     -webkit-background-clip: text;
