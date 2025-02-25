@@ -14,8 +14,4 @@ export class DirectorService {
   getDirectores() {
     return this.http.get<Director[]>(this.url);
   }
-
-  addEvento(director: Director) {
-    return this.http.post(this.url, director);
-  }
 }

@@ -1,5 +1,5 @@
 export interface Director {
-    id: number,
+    id: string,
     nombre: string,
     edad: number,
     imagen: string

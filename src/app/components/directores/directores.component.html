@@ -1,14 +1,10 @@
 <body>
-    <a href="./crearDirector.html" id="boton" class="d-flex justify-content-end">
-        <button type="submit" class="btn btn-dark text-white">
-            Crear
-        </button></a>
 
     <div class="head1 text-center">Directores</div>
     <div class="head2 text-center">Descubre a algunos de los maestros detrás de las películas de terror más icónicas
     </div>
     <div class="row ">
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2" *ngFor="let director of directores;">
+        <div class="col-lg-4 col-md-12 col-sm-12 mt-3" *ngFor="let director of directores;">
             <div style="display: flex;">
                 <img [src]="director.imagen" [alt]="'Imagen de ' + director.nombre">
                 <div class="info-director">

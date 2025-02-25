@@ -17,7 +17,7 @@ export class DirectoresComponent {
   directores: Director[] = []
 
   constructor(private titulo: Title, private directorService: DirectorService) {
-    titulo.setTitle('NightmareBox-Directores')
+    this.titulo.setTitle('NightmareBox-Directores')
   }
 
   ngOnInit(): void {

@@ -1,1 +1,35 @@
-<p>peliculas works!</p>
+<body>
+
+    <a [routerLink]="['/crearPeli']" id="boton" class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-dark text-white">
+            Crear
+        </button></a>
+
+    <div class="head1 text-center">Peliculas</div>
+    <div class="head2 text-center">Algunas de las obras más reconocibles de los directores aportados en esta
+        filmoteca
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12  mt-3" *ngFor="let peli of peliculas">
+            <div style="display: flex;">
+                <img [src]="peli.imagen" [alt]="'Imagen de ' + peli.titulo">
+                <div class="info-pelicula">
+                    <h5>{{ peli.titulo }}</h5>
+                    <p>
+                        <strong>Año:</strong> {{ peli.year }} <br>
+                        <strong>Premios:</strong> {{ peli.premio ? 'Sí' : 'No' }}
+                    </p>
+                    <!--MAPA GOOGLE MAPS-->
+                    <!-- <iframe width="200" height="100" style="border:0;"
+                        [src]="'https://www.google.com/maps/embed/v1/view?key=TU_CLAVE_API&center=' + peli.coordenadas.lat + ',' + peli.coordenadas.long + '&zoom=4'"
+                        allowfullscreen>
+                    </iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

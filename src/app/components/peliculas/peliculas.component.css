@@ -1,0 +1,76 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #680000, #000000);
+    background-attachment: fixed;
+    margin: 0;
+    padding-bottom: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.head1 {
+    /* TITULO*/
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, #000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0px 5px 1px rgba(255, 255, 255, 0.9),
+        /* Sombra roja brillante */
+        2px 2px 20px rgb(0, 0, 0);
+    /* Sombra negra profunda */
+}
+
+.head2 {
+    /* CABECERA*/
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7), 1px 1px 10px rgba(255, 255, 255, 0.8);
+}
+
+img {
+    height: 420px;
+    width: 290px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: border 0.2 ease;
+    margin-right: 10px;
+}
+
+img:hover {
+    border: 5px solid #ff0000;
+}
+
+/* no se por que esta propiedad en el class no se aplica*/
+#boton {
+    text-decoration: none;
+}
+
+.btn {
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    transform: scale(1.5);
+    font-weight: bold;
+}
+
+.row {
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.info-pelicula {
+    font-size: 16px;
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: auto;
+}
