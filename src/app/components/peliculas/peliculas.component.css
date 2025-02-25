@@ -74,3 +74,10 @@ img:hover {
     margin-left: 10px;
     margin-top: auto;
 }
+
+.form-select{
+    font-size: 13px;
+}
+#selector{
+    margin-top: 10px;
+}

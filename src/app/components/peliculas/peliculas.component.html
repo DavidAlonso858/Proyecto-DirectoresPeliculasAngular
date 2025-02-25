@@ -1,9 +1,23 @@
 <body>
+    <div class="d-flex align-items-center justify-content-between">
 
-    <a [routerLink]="['/crearPeli']" id="boton" class="d-flex justify-content-end">
-        <button type="submit" class="btn btn-dark text-white">
-            Crear
-        </button></a>
+        <div id="selector" class="d-flex align-items-center">
+            <label class="fw-bold text-white ms-3 me-2">Filtra por Director:</label>
+            <!--ngModel para poder pillar el valor del option en el filtro-->
+            <select [(ngModel)]="categoriaPredeterminada" (change)="filtradoPorDirectores(categoriaPredeterminada)"
+                class="form-select w-auto fw-bold">
+                <option value="todas">-- Selecciona Director --</option>
+                <option *ngFor="let dire of directores" value="{{dire.id}}">{{dire.nombre}}</option>
+            </select>
+        </div>
+
+
+        <a [routerLink]="['/crearPeli']" id="boton" class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-dark text-white">
+                Crear
+            </button></a>
+
+    </div>
 
     <div class="head1 text-center">Peliculas</div>
     <div class="head2 text-center">Algunas de las obras más reconocibles de los directores aportados en esta
@@ -11,7 +25,7 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-4 col-md-12 col-sm-12  mt-3" *ngFor="let peli of peliculas">
+        <div class="col-lg-4 col-md-12 col-sm-12  mt-3" *ngFor="let peli of peliculasFiltro">
             <div style="display: flex;">
                 <img [src]="peli.imagen" [alt]="'Imagen de ' + peli.titulo">
                 <div class="info-pelicula">
