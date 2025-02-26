@@ -3,7 +3,7 @@
 Este proyecto es una aplicacion web que sirve para gestionar a diferentes directores y sus peliculas a través de un CRUD (Crear, Leer, Actualizar, Eliminar). En mi caso lo voy a centrar en el género de terror.
 
 > INFORMACION
-1. He creado la estructura del proyecto con su capa Servlet (administracion de rutas), DAO/Repository (funciones del componente en el ts) y Model (las interfaces con los atributos)
+1. He creado la estructura del proyecto con su capa Servlet (administracion de rutas tanto en el service como el app.routes), DAO/Repository (funciones del componente en el ts) y Model (las interfaces con los atributos)
 
 2. He creado la estructura de angular con su separacion en componentes tanto del home, del navbar y los componentes necesarios
 
