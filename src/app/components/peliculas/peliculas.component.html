@@ -35,7 +35,7 @@
                         <strong>Premios:</strong> {{ peli.premio ? 'Sí' : 'No' }}
                     </p>
                     <button class="btn btn-danger" (click)="borradoPelicula(peli.id)">Borrar</button>
-                    <button class="btn btn-success" >Editar</button>
+                    <a [routerLink]="['/peliculas/editar', peli.id]"><button class="btn btn-success">Editar</button></a>
                 </div>
             </div>
         </div>

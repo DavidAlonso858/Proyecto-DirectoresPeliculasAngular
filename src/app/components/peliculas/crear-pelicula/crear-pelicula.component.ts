@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { PeliculaService } from '../../../services/pelicula.service';
 import { Pelicula } from '../../../model/pelicula';
 import { Director } from '../../../model/director';
@@ -19,7 +19,9 @@ export class CrearPeliculaComponent {
   peliculaForm: FormGroup;
   directores: Director[] = []
 
-  constructor(private titulo: Title, private fb: FormBuilder, private peliculaService: PeliculaService, private directorService: DirectorService) {
+  constructor(private titulo: Title, private fb: FormBuilder, private peliculaService: PeliculaService, private directorService: DirectorService
+    , private router: Router
+  ) {
     this.titulo.setTitle('Agregar Pelicula')
 
     this.peliculaForm = this.fb.group({
@@ -50,6 +52,7 @@ export class CrearPeliculaComponent {
         this.peliculaService.addPelicula(newPelicula).subscribe(() => {
           peli.push(newPelicula);
           this.peliculaForm.reset()
+          this.router.navigate(['/peliculas'])
         })
       })
     }

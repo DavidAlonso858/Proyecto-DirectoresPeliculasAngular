@@ -56,6 +56,7 @@ export class PeliculasComponent {
   borradoPelicula(id: string) {
     this.peliculaService.deletePelicula(id).subscribe(() => {
       this.cargarPeliculas();
+      alert('Película borrada con éxito');
     });
 
   }

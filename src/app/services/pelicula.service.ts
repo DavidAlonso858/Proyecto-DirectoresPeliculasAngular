@@ -19,10 +19,16 @@ export class PeliculaService {
   addPelicula(pelicula: Pelicula) {
     return this.http.post(this.url, pelicula);
   }
-  
+
   deletePelicula(id: string) {
     return this.http.delete(`${this.url}/${id}`);
   }
 
-  
+  editarPelicula(peli: Pelicula) {
+    return this.http.put<Pelicula>(`${this.url}/${peli.id}`, peli)
+  }
+
+  getPeliculaById(id: string) {
+    return this.http.get<Pelicula>(`${this.url}/${id}`);
+  }
 }
