@@ -4,37 +4,61 @@
             "id": 1,
             "nombre": "David Cronenberg",
             "edad": 81,
-            "imagen": "https://image.tmdb.org/t/p/w342/3xh4e2gWHDilMLtucHzDGsmJMuQ.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/3xh4e2gWHDilMLtucHzDGsmJMuQ.jpg",
+            "coordenadas": {
+                "lat": 43.70643,
+                "long": -79.39864
+            }
         },
         {
             "id": 2,
             "nombre": "Ti West",
             "edad": 44,
-            "imagen": "https://image.tmdb.org/t/p/w342/y65ZHU9m830lbdbggxC8eOT123S.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/y65ZHU9m830lbdbggxC8eOT123S.jpg",
+            "coordenadas": {
+                "lat": 39.7459500,
+                "long": -75.5465900
+            }
         },
         {
             "id": 3,
             "nombre": "Alfred Hitchcock",
             "edad": 80,
-            "imagen": "https://image.tmdb.org/t/p/w342/108fiNM6poRieMg7RIqLJRxdAwG.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/108fiNM6poRieMg7RIqLJRxdAwG.jpg",
+            "coordenadas": {
+                "lat": 51.50853,
+                "long": -0.12574
+            }
         },
         {
             "id": 4,
             "nombre": "Paco Plaza",
             "edad": 51,
-            "imagen": "https://image.tmdb.org/t/p/w342/7STjUYAbJyr3gMKm9Qvfy5ESpIt.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/7STjUYAbJyr3gMKm9Qvfy5ESpIt.jpg",
+            "coordenadas": {
+                "lat": 39.47391,
+                "long": -0.37966
+            }
         },
         {
             "id": 5,
             "nombre": "Guillermo del Toro",
             "edad": 60,
-            "imagen": "https://image.tmdb.org/t/p/w342/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
+            "coordenadas": {
+                "lat": 20.66682,
+                "long": -103.39182
+            }
         },
         {
             "id": 6,
             "nombre": "James Wan",
             "edad": 47,
-            "imagen": "https://image.tmdb.org/t/p/w342/mMYVuGyP74c7sFJHFrc5YPwj4Wd.jpg"
+            "imagen": "https://image.tmdb.org/t/p/w342/mMYVuGyP74c7sFJHFrc5YPwj4Wd.jpg",
+            "coordenadas": {
+                "lat": 1.55,
+                "long": 110.33333
+            }
         }
     ]
 }
