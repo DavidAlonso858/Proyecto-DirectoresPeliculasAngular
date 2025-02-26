@@ -20,7 +20,9 @@ export class PeliculaService {
     return this.http.post(this.url, pelicula);
   }
   
-  deleteEvento(id: string) {
+  deletePelicula(id: string) {
     return this.http.delete(`${this.url}/${id}`);
   }
+
+  
 }
