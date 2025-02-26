@@ -3,15 +3,20 @@
     <div class="head1 text-center">Directores</div>
     <div class="head2 text-center">Descubre a algunos de los maestros detrás de las películas de terror más icónicas
     </div>
-    <div class="row ">
-        <div class="col-lg-4 col-md-12 col-sm-12 mt-3" *ngFor="let director of directores;">
-            <div style="display: flex;">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 mt-3" *ngFor="let director of directores">
+            <div class="d-flex">
                 <img [src]="director.imagen" [alt]="'Imagen de ' + director.nombre">
                 <div class="info-director">
-                     <h5 class="fw-bold">{{ director.nombre }}</h5>
-                    <strong>Edad:</strong> {{ director.edad }} años
+                    <h5 class="fw-bold">{{ director.nombre }}</h5>
+                    <strong>Edad:</strong> {{ director.edad }} años <br>
+                    <div [id]="'map' + director.id" class="map-container">
+
                 </div>
             </div>
+
+
         </div>
+    </div>
     </div>
 </body>
