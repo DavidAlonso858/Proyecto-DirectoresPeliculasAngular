@@ -26,7 +26,7 @@ export class CrearPeliculaComponent {
 
     this.peliculaForm = this.fb.group({
       titulo: ['', Validators.required], // Validators.pattern('[A-Za-z+]')
-      year: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(4), Validators.pattern('[0-9]+')]],
+      year: ['', [Validators.required, Validators.pattern('^[0-9]{4}$')]],
       premio: [false],
       imagen: ['', Validators.required],
       idDirector: ['', Validators.required]

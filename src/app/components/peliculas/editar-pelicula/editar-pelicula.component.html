@@ -12,7 +12,7 @@
 
             <!--MENSAJE VALIDACION-->
             <div *ngIf="peliculaForm.get('director')?.invalid && peliculaForm.get('director')?.touched"
-                class="text-danger">
+                class="text-danger fw-bold">
                 es obligatorio el director de la pelicula
             </div>
         </div>
@@ -23,7 +23,7 @@
                 title="solo texto de la pelicula" required>
 
             <!--MENSAJE VALIDACION-->
-            <div *ngIf="peliculaForm.get('titulo')?.invalid && peliculaForm.get('titulo')?.touched" class="text-danger">
+            <div *ngIf="peliculaForm.get('titulo')?.invalid && peliculaForm.get('titulo')?.touched" class="text-danger fw-bold">
                 es obligatorio el titulo de la pelicula
             </div>
         </div>
@@ -34,7 +34,7 @@
                 title="cuatro numeros del año" required>
 
             <!--MENSAJE VALIDACION-->
-            <div *ngIf="peliculaForm.get('year')?.invalid && peliculaForm.get('year')?.touched" class="text-danger">
+            <div *ngIf="peliculaForm.get('year')?.invalid && peliculaForm.get('year')?.touched" class="text-danger fw-bold">
                 es obligatorio el year de la pelicula (4 digitos)
             </div>
         </div>
@@ -49,7 +49,7 @@
             <input type="text" id="Imagen" formControlName="imagen" class="form-control w-auto" required
                 placeholder="URL de la imagen">
 
-            <div *ngIf="peliculaForm.get('iamgen')?.invalid && peliculaForm.get('imagen')?.touched" class="text-danger">
+            <div *ngIf="peliculaForm.get('iamgen')?.invalid && peliculaForm.get('imagen')?.touched" class="text-danger fw-bold">
                 Introduzca la url de la imagen de la pelicula
             </div>
         </div>
