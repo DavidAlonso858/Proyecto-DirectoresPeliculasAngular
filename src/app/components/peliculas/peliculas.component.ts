@@ -27,9 +27,7 @@ export class PeliculasComponent {
   }
 
   ngOnInit(): void {
-    this.peliculaService.getPeliculas().subscribe((peli) => {
-      this.cargarPeliculas();
-    })
+    this.cargarPeliculas();
 
     this.directorService.getDirectores().subscribe((dire) => {
       this.directores = dire;
@@ -53,6 +51,13 @@ export class PeliculasComponent {
 
       this.peliculasFiltro = [...this.peliculas]
     }
+  }
+
+  borradoPelicula(id: string) {
+    this.peliculaService.deleteEvento(id).subscribe(() => {
+      this.cargarPeliculas();
+    });
+
   }
 
 }

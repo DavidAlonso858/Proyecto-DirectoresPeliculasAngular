@@ -5,7 +5,7 @@
             <label class="fw-bold text-white ms-3 me-2">Filtra por Director:</label>
             <!--ngModel para poder pillar el valor del option en el filtro-->
             <select [(ngModel)]="categoriaPredeterminada" (change)="filtradoPorDirectores(categoriaPredeterminada)"
-                class="form-select w-auto fw-bold fst-italic" >
+                class="form-select w-auto fw-bold fst-italic">
                 <option value="todas">-- Selecciona Director --</option>
                 <option *ngFor="let dire of directores" value="{{dire.id}}">{{dire.nombre}}</option>
             </select>
@@ -34,6 +34,7 @@
                         <strong>Año:</strong> {{ peli.year }} <br>
                         <strong>Premios:</strong> {{ peli.premio ? 'Sí' : 'No' }}
                     </p>
+                    <button class="btn btn-danger" (click)="borradoPelicula(peli.id)">Borrar</button>
                 </div>
             </div>
         </div>

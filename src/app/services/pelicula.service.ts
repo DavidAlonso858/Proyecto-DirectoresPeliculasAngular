@@ -19,5 +19,8 @@ export class PeliculaService {
   addPelicula(pelicula: Pelicula) {
     return this.http.post(this.url, pelicula);
   }
-
+  
+  deleteEvento(id: string) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }
