@@ -1,0 +1,62 @@
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <form [formGroup]="peliculaForm" (ngSubmit)="onSubmit()" class="box shadow ">
+        <h2 class="text-white text-center fst-italic fw-bold">Registrar Datos de la Pelicula</h2>
+        <div class="formu-apartado">
+            <label class="label text-white me-3 fs-5">Director</label>
+
+            <select formControlName="idDirector" class="form-select w-auto fst-italic">
+
+                <option *ngFor="let director of directores" value="{{director.id}}">{{director.nombre}}</option>
+
+            </select>
+
+            <!--MENSAJE VALIDACION-->
+            <div *ngIf="peliculaForm.get('director')?.invalid && peliculaForm.get('director')?.touched"
+                class="text-danger">
+                es obligatorio el director de la pelicula
+            </div>
+        </div>
+
+        <div class="formu-apartado">
+            <label for="Titulo" class="label text-white me-3 fs-5">Título</label>
+            <input type="text" id="Titulo" formControlName="titulo" class="form-control w-auto"
+                title="solo texto de la pelicula" required>
+
+            <!--MENSAJE VALIDACION-->
+            <div *ngIf="peliculaForm.get('titulo')?.invalid && peliculaForm.get('titulo')?.touched" class="text-danger">
+                es obligatorio el titulo de la pelicula
+            </div>
+        </div>
+
+        <div class="formu-apartado">
+            <label for="Year" class="label text-white me-3 fs-5">Year</label>
+            <input type="text" id="Year" formControlName="year" class="form-control w-auto"
+                title="cuatro numeros del año" required>
+
+            <!--MENSAJE VALIDACION-->
+            <div *ngIf="peliculaForm.get('year')?.invalid && peliculaForm.get('year')?.touched" class="text-danger">
+                es obligatorio el year de la pelicula (4 digitos)
+            </div>
+        </div>
+
+        <div class="formu-apartado">
+            <label for="Premio" class="label text-white me-3 fs-5">Premio</label>
+            <input type="checkbox" id="Premio" formControlName="premio" class="form-check-input">
+        </div>
+
+        <div class="formu-apartado">
+            <label for="Imagen" class="label text-white me-3 fs-5">Póster</label>
+            <input type="text" id="Imagen" formControlName="imagen" class="form-control w-auto" required
+                placeholder="URL de la imagen">
+
+            <div *ngIf="peliculaForm.get('iamgen')?.invalid && peliculaForm.get('imagen')?.touched" class="text-danger">
+                Introduzca la url de la imagen de la pelicula
+            </div>
+        </div>
+
+        <div class="formu-apartado">
+            <button type="submit" class="btn btn-danger text-white mt-4">Enviar</button>
+        </div>
+
+    </form>
+</body>

@@ -28,13 +28,20 @@ export class PeliculasComponent {
 
   ngOnInit(): void {
     this.peliculaService.getPeliculas().subscribe((peli) => {
-      this.peliculas = peli;
-      this.filtradoPorDirectores(this.categoriaPredeterminada);
+      this.cargarPeliculas();
     })
 
     this.directorService.getDirectores().subscribe((dire) => {
       this.directores = dire;
     })
+  }
+
+  // para que el filtrado pille la ultima que he agregado
+  cargarPeliculas() {
+    this.peliculaService.getPeliculas().subscribe((peli) => {
+      this.peliculas = peli;
+      this.filtradoPorDirectores(this.categoriaPredeterminada);
+    });
   }
 
   filtradoPorDirectores(filtro: string) {
@@ -43,7 +50,7 @@ export class PeliculasComponent {
       this.peliculasFiltro = this.peliculas.filter(p => p.idDirector == filtro);
     } else {
       console.log(this.peliculas);
-      
+
       this.peliculasFiltro = [...this.peliculas]
     }
   }
