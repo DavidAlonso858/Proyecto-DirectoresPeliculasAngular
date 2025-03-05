@@ -151,6 +151,14 @@
       "premio": true,
       "imagen": "https://a.ltrbxd.com/resized/film-poster/6/6/5/5/7/66557--rec-genesis-0-1000-0-1500-crop.jpg?v=c77af81c0d",
       "idDirector": "4"
+    },
+    {
+      "id": "20",
+      "titulo": "Dead Silence",
+      "year": 2007,
+      "premio": true,
+      "imagen": "https://a.ltrbxd.com/resized/sm/upload/my/il/wy/e5/qNWkiR1iwNxC2XvIwkbooEhdCmX-0-1000-0-1500-crop.jpg?v=74cfabe2c1",
+      "idDirector": "6"
     }
   ]
 }
